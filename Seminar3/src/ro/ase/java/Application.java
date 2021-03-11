@@ -1,6 +1,5 @@
 package ro.ase.java;
 
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -28,9 +27,6 @@ public class Application {
 			System.out.println(p.getProductName() + " - " + p.getPrice());
 		}
 		
-		System.out.println();
-		
-		//Collections.sort(cart.getSelectedProducts());
 		cart.getSelectedProducts().sort(null);
 		
 		for(Product p : cart.getSelectedProducts()) {
@@ -46,8 +42,6 @@ public class Application {
 			}
 		}
 		
-		System.out.println();
-		
 		for(Entry<String, Integer> entry : stocks.entrySet()) {
 			System.out.println(entry.getKey() + ": " + entry.getValue());
 		}
@@ -58,7 +52,7 @@ public class Application {
 		uniqueProducts.add(p3);
 		uniqueProducts.add(p4);
 		System.out.println();
-		System.out.println("-------SET-------");
+
 		for(Product p : uniqueProducts) {
 			System.out.println(p.getProductName() + " - " + p.getPrice());
 		}
