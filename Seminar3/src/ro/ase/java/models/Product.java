@@ -37,7 +37,6 @@ public class Product implements Comparable<Product>{
 
 	@Override
 	public int compareTo(Product o) {
-		// TODO Auto-generated method stub
 		if(this.price == o.price) {
 			return 0;
 		}
@@ -51,7 +50,6 @@ public class Product implements Comparable<Product>{
 
 	@Override
 	public boolean equals(Object obj) {
-		// TODO Auto-generated method stub
 		if(this == obj) {
 			return true;
 		}
@@ -64,7 +62,6 @@ public class Product implements Comparable<Product>{
 
 	@Override
 	public int hashCode() {
-		// TODO Auto-generated method stub
 		return 37 * 37 * (int) this.price + this.productName.hashCode();
 	}
 	
